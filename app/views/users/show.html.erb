@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+
+  <strong>Amount:</strong>
+  <%= @user.account.amount %>
+</p>
+
+<%= link_to 'Transfer', edit_user_path(@user) %> |
+<%= link_to 'Update amount', @user %> |
+<%= link_to 'Back', users_path %>
